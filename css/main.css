@@ -961,7 +961,7 @@ body {
   }
 }
 
-.mobile-menu .mobile-menu-container {
+.mobile-menu-container {
   position: absolute;
   top: 100%;
   left: 0;
@@ -978,7 +978,7 @@ body {
   transition: opacity, visibility 250ms, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu .mobile-menu-container.is-open {
+.mobile-menu-container.is-open {
   pointer-events: all;
   visibility: visible;
   opacity: 1;
