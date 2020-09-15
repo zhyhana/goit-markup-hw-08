@@ -1,0 +1,117 @@
+.mobile-menu {
+    $bar-width: 24px;
+    $bar-height: 2.65px;
+    $bar-spacing: 7px;
+
+    font-size: 18px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+        background-color: $secondary-text-color;
+        padding: 60px;
+        text-align: center;
+        z-index: 1;
+        border-top: 1px solid #ececec;
+        transition: opacity, visibility 250ms, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.is-open {
+            pointer-events: all;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 16px;
+        margin-left: auto;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .menu-button.is-open {
+        .bar {
+            background: rgba(255, 255, 255, 0);
+
+            &:after {
+                top: 0;
+                transform: rotate(45deg);
+                transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            &:before {
+                bottom: 0;
+                transform: rotate(-45deg);
+                transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+        }
+    }
+
+    .bar,
+    .bar:after,
+    .bar:before {
+        width: $bar-width;
+        height: $bar-height;
+    }
+
+    .bar {
+        display: block;
+        position: relative;
+        transform: translateY($bar-spacing);
+        background: rgba(33, 33, 33, 1);
+        transition: all 0ms 300ms;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: $bar-spacing;
+            background: rgba(33, 33, 33, 1);
+            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: $bar-spacing;
+            background: rgba(33, 33, 33, 1);
+            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    }
+
+    .header-menu {
+        margin-bottom: 57px;
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

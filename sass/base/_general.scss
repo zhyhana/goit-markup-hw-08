@@ -9,6 +9,14 @@ body {
     background-color: $secondary-text-color;
 }
 
+main {
+    padding-top: 56px;
+
+    @media all and (min-width: 768px) {
+        padding-top: 79px;
+    }
+}
+
 .container {
     width: 100%;
     padding-left: 15px;
@@ -24,12 +32,19 @@ body {
         width: 768px;
     }
 
-    // width: 1200px;
+    @media all and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media all and (min-width: 1200px) {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
 }
 
 .visually-hidden {
@@ -54,8 +69,10 @@ body {
     text-transform: uppercase;
     color: $secondary-text-color;
 
-    // font-size: 44px;
-    // line-height: 1.364;
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.364;
+    }
 }
 
 .section-title {
@@ -64,12 +81,13 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-
     margin-bottom: 32px;
 
-    //   font-size: 36px;
-    //   line-height: 1.17;
-    //   margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .item-title {

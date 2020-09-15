@@ -1,10 +1,17 @@
 .examples {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         display: none;
+    }
+
+    &-list {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &-item {
         position: relative;
+        width: calc((100% - 30px * 2) / 3);
 
         &:not(:nth-child(3n)) {
             margin-right: 30px;

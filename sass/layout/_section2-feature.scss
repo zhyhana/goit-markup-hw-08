@@ -2,16 +2,24 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // padding-top: 95px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 95px;
+        padding-bottom: 0;
+    }
+
     &-list {
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
         }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &-item {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 767px) and (min-width: 1199px) {
             &:not(:last-child) {
                 margin-bottom: 30px;
             }
@@ -25,7 +33,16 @@
             }
 
             &:not(:nth-last-child(-n+2)) {
-                margin-bottom: 32px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 30px * 3) / 4);
+
+            &:not(:nth-child(4n)) {
+                margin-right: 30px;
+                margin-bottom: 0;
             }
         }
 
