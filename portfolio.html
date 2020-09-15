@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home work 7</title>
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container mobile-menu">
+        <nav class="navigation">
+          <a href="./" class="logo header-logo"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <input type="checkbox" id="burger" />
+            <label for="burger">
+              <span class="bar"></span>
+            </label>
+          </button>
+          <div
+            class="mobile-menu-container is-open"
+            id="menu-container"
+            data-menu
+          >
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a href="index.html" class="header-menu-link">Студия</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="portfolio.html" class="header-menu-link active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header-contact-list">
+              <li class="header-contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-link header-contact-link"
+                >
+                  <svg width="16" height="12">
+                    <use href="./images/icon/sprite.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contact-item">
+                <a
+                  href="tel:+380961111111"
+                  class="contact-link header-contact-link"
+                >
+                  <svg width="10" height="16">
+                    <use href="./images/icon/sprite.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- <div class="container header-container">
+        <nav class="flexbox align-items-center navigation">
+          <a href="./" class="logo header-logo">
+            Web<span class="logo-black">Studio</span>
+          </a>
+          <ul class="list flexbox header-menu">
+            <li class="header-menu-item">
+              <a href="index.html" class="header-menu-link active">Студия</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="portfolio.html" class="header-menu-link">Портфолио</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list flexbox header-contact-list">
+          <li class="header-contact-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-link header-contact-link"
+            >
+              <svg width="16" height="12">
+                <use href="./images/icon/sprite.svg#mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contact-item">
+            <a
+              href="tel:+380961111111"
+              class="contact-link header-contact-link"
+            >
+              <svg width="10" height="16">
+                <use href="./images/icon/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div> -->
+    </header>
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="selection-buttons-list">
+            <li class="selection-buttons-item">
+              <button class="select-button portfolio-select-button">Все</button>
+            </li>
+            <li class="selection-buttons-item">
+              <button class="select-button portfolio-select-button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="selection-buttons-item">
+              <button class="select-button portfolio-select-button">
+                Приложения
+              </button>
+            </li>
+            <li class="selection-buttons-item">
+              <button class="select-button portfolio-select-button">
+                Дизайн
+              </button>
+            </li>
+            <li class="selection-buttons-item">
+              <button class="select-button portfolio-select-button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Tehnocrak.jpg    1x,
+                        ./images/portfolio/desktop/Tehnocrak@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Tehnocrak.jpg    1x,
+                        ./images/portfolio/tablet/Tehnocrak@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Tehnocrak.jpg    1x,
+                        ./images/portfolio/mobile/Tehnocrak@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Tehnocrak.jpg"
+                      alt="Tehnocrak"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Технокряк</h2>
+                  <p class="portfolio-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Poster-Golden-Star.jpg    1x,
+                        ./images/portfolio/desktop/Poster-Golden-Star@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Poster-Golden-Star.jpg    1x,
+                        ./images/portfolio/tablet/Poster-Golden-Star@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Poster-Golden-Star.jpg    1x,
+                        ./images/portfolio/mobile/Poster-Golden-Star@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Poster-Golden-Star.jpg"
+                      alt="Poster-Golden-Star"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Restaurant-Seafood.jpg    1x,
+                        ./images/portfolio/desktop/Restaurant-Seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Restaurant-Seafood.jpg    1x,
+                        ./images/portfolio/tablet/Restaurant-Seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Restaurant-Seafood.jpg    1x,
+                        ./images/portfolio/mobile/Restaurant-Seafood@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Restaurant-Seafood.jpg"
+                      alt="Restaurant Seafood"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Ресторан Seafood</h2>
+                  <p class="portfolio-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Project-Prime.jpg    1x,
+                        ./images/portfolio/desktop/Project-Prime@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Project-Prime.jpg    1x,
+                        ./images/portfolio/tablet/Project-Prime@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Project-Prime.jpg    1x,
+                        ./images/portfolio/mobile/Project-Prime@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Project-Prime.jpg"
+                      alt="Project Prime"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Проект Prime</h2>
+                  <p class="portfolio-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Project-Boxes.jpg    1x,
+                        ./images/portfolio/desktop/Project-Boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Project-Boxes.jpg    1x,
+                        ./images/portfolio/tablet/Project-Boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Project-Boxes.jpg    1x,
+                        ./images/portfolio/mobile/Project-Boxes@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Project-Boxes.jpg"
+                      alt="Project Boxes"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Проект Boxes</h2>
+                  <p class="portfolio-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Inspiration-has-no-Borders.jpg    1x,
+                        ./images/portfolio/desktop/Inspiration-has-no-Borders@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Inspiration-has-no-Borders.jpg    1x,
+                        ./images/portfolio/tablet/Inspiration-has-no-Borders@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Inspiration-has-no-Borders.jpg    1x,
+                        ./images/portfolio/mobile/Inspiration-has-no-Borders@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Inspiration-has-no-Borders.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                  <p class="portfolio-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Edition-Limited-Edition.jpg    1x,
+                        ./images/portfolio/desktop/Edition-Limited-Edition@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Edition-Limited-Edition.jpg    1x,
+                        ./images/portfolio/tablet/Edition-Limited-Edition@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Edition-Limited-Edition.jpg    1x,
+                        ./images/portfolio/mobile/Edition-Limited-Edition@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Edition-Limited-Edition.jpg"
+                      alt="Edition Limited Edition"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Издание Limited Edition</h2>
+                  <p class="portfolio-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Project-LAB.jpg    1x,
+                        ./images/portfolio/desktop/Project-LAB@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Project-LAB.jpg    1x,
+                        ./images/portfolio/tablet/Project-LAB@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Project-LAB.jpg    1x,
+                        ./images/portfolio/mobile/Project-LAB@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Project-LAB.jpg"
+                      alt="Project LAB"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Проект LAB</h2>
+                  <p class="portfolio-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="#">
+                <div class="portfolio-preview">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/Growing-Business.jpg    1x,
+                        ./images/portfolio/desktop/Growing-Business@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/Growing-Business.jpg    1x,
+                        ./images/portfolio/tablet/Growing-Business@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/Growing-Business.jpg    1x,
+                        ./images/portfolio/mobile/Growing-Business@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/Growing-Business.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis tempore blanditiis aliquam rem distinctio saepe
+                      sapiente, tempora natus modi doloremque suscipit id
+                      dolores quidem.
+                    </p>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="portfolio-name">Growing Business</h2>
+                  <p class="portfolio-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-list">
+        <div class="footer-info">
+          <a href="./" class="logo footer-logo">
+            Web<span class="logo-white">Studio</span>
+          </a>
+          <address>
+            <ul class="list footer-contact">
+              <li class="footer-contact-item">
+                <a
+                  href="https://goo.gl/maps/oeoHF6faVdq87SJt8"
+                  class="contact-link footer-contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-contact-item">
+                <a
+                  href="mailto:info@example.com"
+                  class="contact-link footer-contact-link"
+                >
+                  info@example.com
+                </a>
+              </li>
+              <li class="footer-contact-item">
+                <a
+                  href="tel:+380961111111"
+                  class="contact-link footer-contact-link"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-join-in">
+          <h3 class="item-title">Присоединяйтесь</h3>
+          <ul class="social-link-list">
+            <li class="social-link-item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-link footer-link"
+              >
+                <span class="visually-hidden">Instagram</span>
+                <svg width="20" height="20">
+                  <use href="./images/icon/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-link footer-link"
+              >
+                <span class="visually-hidden">Twitter</span>
+                <svg width="20" height="20">
+                  <use href="./images/icon/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-link footer-link"
+              >
+                <span class="visually-hidden">Facebook</span>
+                <svg width="20" height="20">
+                  <use href="./images/icon/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-link footer-link"
+              >
+                <span class="visually-hidden">Linkedin</span>
+                <svg width="20" height="20">
+                  <use href="./images/icon/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <h3 class="item-title">Подпишитесь на рассылку</h3>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              class="subscribe-email"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="E-mail"
+              autocomplete="off"
+              required
+            />
+            <button class="btn primary-btn subscribe-button">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/icon/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

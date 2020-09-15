@@ -1,0 +1,125 @@
+body {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background-color: $secondary-text-color;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media all and (min-width: 480px) {
+        width: 480px;
+    }
+
+    // width: 1200px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50% 50% 50% 50%);
+    margin: -1px;
+}
+
+.main-title {
+    font-size: 26px;
+    line-height: 1.615;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    // font-size: 44px;
+    // line-height: 1.364;
+}
+
+.section-title {
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+
+    margin-bottom: 32px;
+
+    //   font-size: 36px;
+    //   line-height: 1.17;
+    //   margin-bottom: 50px;
+}
+
+.item-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: $accent-color;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.two-columns {
+    width: calc((100% - 30px * 5) / 6);
+}
+
+.three-columns {
+    width: calc((100% - 30px * 3) / 4);
+}
+
+.four-columns {
+    width: calc((100% - 30px * 2) / 3);
+}
+
+.six-columns {
+    width: calc((100% - 30px) / 2);
+}
+
+// * {
+//     outline: 1px solid red;
+// }
