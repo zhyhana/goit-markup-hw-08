@@ -4,14 +4,34 @@
     color: $secondary-text-color;
     background: #2f303a;
 
-    &-info {
-        margin-bottom: 56px;
-    }
-
     &-list {
         align-items: baseline;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .footer-info,
+            .footer-join-in {
+                width: calc((100% - 30px) / 2);
+            }
+
+            .footer-subscribe {
+                width: 61%;
+            }
+        }
     }
+
+    &-info {
+        margin-bottom: 56px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 30px;
+        }
+    }
+
 
     &-list>div:not(:last-child) {
         // margin-right: 30px;
@@ -45,7 +65,6 @@
             justify-content: center;
         }
     }
-
 
     &-join-in .item-title,
     &-subscribe .item-title {

@@ -20,6 +20,10 @@ body {
         width: 480px;
     }
 
+    @media all and (min-width: 768px) {
+        width: 768px;
+    }
+
     // width: 1200px;
 }
 
@@ -120,6 +124,6 @@ body {
     width: calc((100% - 30px) / 2);
 }
 
-// * {
-//     outline: 1px solid red;
-// }
+* {
+    // outline: 1px solid red;
+}
